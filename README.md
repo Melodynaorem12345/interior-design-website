@@ -1,16 +1,13 @@
-# React + Vite
+# Creative (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Scripts
+- `npm run dev` — start the dev server.
+- `npm run build` — production build (GH Pages workflow overrides the base path automatically).
+- `npm run preview` — preview the production build locally.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Deploying to GitHub Pages
+1) Create a GitHub repo for this project and push the code to the `main` branch.  
+2) In GitHub, open Settings → Pages and select **GitHub Actions** as the source.  
+3) The workflow at `.github/workflows/deploy.yml` will build with `--base=/${{ github.event.repository.name }}/` so assets load correctly on Pages, then publish to the `github-pages` environment.  
+4) Every push to `main` (or a manual `Run workflow`) will redeploy.  
+5) If you use a custom domain or a user/organization Pages site (e.g. `username.github.io`), update the `--base` flag in the workflow to `/` so assets resolve from the root.
