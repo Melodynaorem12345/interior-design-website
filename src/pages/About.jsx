@@ -1,0 +1,593 @@
+const About = () => (
+  <>
+    <div className="boxed_wrapper">
+      {/* preloader */}
+      <div className="loader-wrap">
+        <div className="preloader">
+          <div className="preloader-close">X</div>
+          <div id="handle-preloader" className="handle-preloader">
+            <div className="animation-preloader">
+              <div className="spinner" />
+              <div className="txt-loading">
+                <span data-text-preloader="k" className="letters-loading">
+                  k
+                </span>
+                <span data-text-preloader="i" className="letters-loading">
+                  i
+                </span>
+                <span data-text-preloader="t" className="letters-loading">
+                  t
+                </span>
+                <span data-text-preloader="c" className="letters-loading">
+                  c
+                </span>
+                <span data-text-preloader="h" className="letters-loading">
+                  h
+                </span>
+                <span data-text-preloader="n" className="letters-loading">
+                  n
+                </span>
+                <span data-text-preloader="o" className="letters-loading">
+                  o
+                </span>
+                <span data-text-preloader="x" className="letters-loading">
+                  x
+                </span>
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+      {/* preloader end */}
+      {/*Search Popup*/}
+      <div id="search-popup" className="search-popup">
+        <div className="popup-inner">
+          <div className="upper-box">
+            <figure className="logo-box"><a href="/"><img src="/assets/images/logo.png" alt="" /></a></figure>
+            <div className="close-search"><span className="fas fa-times" /></div>
+          </div>
+          <div className="overlay-layer" />
+          <div className="auto-container">
+            <div className="search-form">
+              <form method="post" action="/">
+                <div className="form-group">
+                  <fieldset>
+                    <input type="search" className="form-control" name="search-input" defaultValue placeholder="Type your keyword and hit" required />
+                    <button type="submit"><img src="/assets/images/icons/icon-3.png" alt="" /></button>
+                  </fieldset>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* sidebar cart item */}
+      <div className="xs-sidebar-group info-group info-sidebar">
+        <div className="xs-overlay xs-bg-black" />
+        <div className="xs-sidebar-widget">
+          <div className="sidebar-widget-container">
+            <div className="widget-heading">
+              <a href="#" className="close-side-widget">X</a>
+            </div>
+            <div className="sidebar-textwidget">
+              <div className="sidebar-info-contents">
+                <div className="content-inner">
+                  <div className="logo">
+                    <a href="/"><img src="/assets/images/logo-2.png" alt="" /></a>
+                  </div>
+                  <div className="text">
+                    <h3>We Are Modular Kitchen Company</h3>
+                    <p>Our experienced team offers services for both residential and commercial properties.With over 25 years of experience in the industry.</p>
+                  </div>
+                  <div className="info-box">
+                    <h3>Conatct Us</h3>
+                    <ul className="info clearfix">
+                      <li><div className="icon"><img src="/assets/images/icons/icon-5.png" alt="" /></div>54B, Tailstoi Town 5238 MT, La city, IA 522364</li>
+                      <li><div className="icon"><img src="/assets/images/icons/icon-6.png" alt="" /></div><a href="mailto:contact@example.com">contact@example.com</a></li>
+                      <li><div className="icon"><img src="/assets/images/icons/icon-7.png" alt="" /></div><a href="tel:18004567890">+1800 456 7890</a></li>
+                      <li><div className="icon"><img src="/assets/images/icons/icon-8.png" alt="" /></div>Working Hrs : 9.30am to 6.30pm</li>
+                    </ul>
+                  </div>
+                  <div className="subscribe-inner">
+                    <h3>Newsletter Subscription</h3>
+                    <form action="/contact" method="post">
+                      <div className="form-group">
+                        <input type="email" name="email" placeholder="Enter Email Address" required />
+                        <button type="submit" className="theme-btn"><span>subscribe now</span></button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* END sidebar widget item */}
+      {/* main header */}
+      <header className="main-header header-style-five">
+        {/* header-top */}
+        <div className="header-top">
+          <div className="auto-container">
+            <div className="top-inner">
+              <div className="text-box"><p>Welcome to Kitchnox Modular Kitchen !</p></div>
+              <div className="left-column">
+                <ul className="info-list">
+                  <li><img src="/assets/images/icons/icon-1.png" alt="" />Call for help: <a href="tel:18004567890"><span>(+1800) 456 7890</span></a></li>
+                  <li><img src="/assets/images/icons/icon-2.png" alt="" /><a href="/">Book An Appointment</a></li>
+                </ul>
+                <ul className="social-links">
+                  <li><a href="/"><i className="fab fa-facebook-f" /></a></li>
+                  <li><a href="/"><i className="fab fa-twitter" /></a></li>
+                  <li><a href="/"><i className="fab fa-linkedin-in" /></a></li>
+                  <li><a href="/"><i className="fab fa-instagram" /></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* header-lower */}
+        <div className="header-lower">
+          <div className="auto-container">
+            <div className="outer-box">
+              <figure className="logo-box"><a href="/"><img src="/assets/images/logo-2.png" alt="" /></a></figure>
+              <div className="menu-area">
+                {/*Mobile Navigation Toggler*/}
+                <div className="mobile-nav-toggler">
+                  <i className="icon-bar" />
+                  <i className="icon-bar" />
+                  <i className="icon-bar" />
+                </div>
+                <nav className="main-menu navbar-expand-md navbar-light clearfix">
+                  <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                    <ul className="navigation clearfix">
+                      <li className="dropdown"><a href="#">Home</a>
+                        <ul>
+                          <li><a href="/">Home Page 1</a></li>
+                          <li><a href="/">Home Page 2</a></li>
+                          <li><a href="/">Home Page 3</a></li>
+                          <li><a href="/">Home Page 4</a></li>
+                        </ul>
+                      </li>  
+                      <li className="current dropdown"><a href="#">About Us</a>
+                        <ul>
+                          <li><a href="/about">About Us</a></li>
+                          <li><a href="/team">Our Team</a></li>
+                          <li><a href="/error">404</a></li>
+                        </ul>
+                      </li> 
+                      <li className="dropdown"><a href="#">Services</a>
+                        <ul>
+                          <li><a href="/service">All Service 01</a></li>
+                          <li><a href="/service">All Service 02</a></li>
+                        </ul>
+                      </li>
+                      <li className="dropdown"><a href="#">Projects</a>
+                        <ul>
+                          <li><a href="/project">Project 01</a></li>
+                          <li><a href="/project">Project 02</a></li>
+                          <li><a href="/project">Project 03</a></li>
+                          <li><a href="/project">Project Details</a></li>
+                        </ul>
+                      </li> 
+                      <li className="dropdown"><a href="#">Pages</a>
+                        <ul>
+                          <li><a href="/appointment">Book An Appointment</a></li>
+                          <li><a href="/faq">Faq</a></li>
+                          <li><a href="/testimonial">Testimonials</a></li>
+                        </ul>
+                      </li>
+                      <li className="dropdown"><a href="#">News</a>
+                        <ul>
+                          <li><a href="/blog">Blog Grid</a></li>
+                          <li><a href="/blog">Blog Standard</a></li>
+                          <li><a href="/blog-details">Blog Details</a></li>
+                        </ul>
+                      </li>  
+                      <li><a href="/contact">Contact Us</a></li> 
+                    </ul>
+                  </div>
+                </nav>
+                <div className="search-toggler ml_25 mr_40"><img src="/assets/images/icons/icon-52.png" alt="" /></div>
+                <div className="nav-btn nav-toggler navSidebar-button clearfix"><img src="/assets/images/icons/icon-53.png" alt="" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*sticky Header*/}
+        <div className="sticky-header">
+          <div className="auto-container">
+            <div className="outer-box">
+              <figure className="logo-box"><a href="/"><img src="/assets/images/logo-2.png" alt="" /></a></figure>
+              <div className="menu-area">
+                <nav className="main-menu clearfix">
+                  {/*Keep This Empty / Menu will come through Javascript*/}
+                </nav>
+                <div className="search-toggler ml_25 mr_40"><img src="/assets/images/icons/icon-52.png" alt="" /></div>
+                <div className="nav-btn nav-toggler navSidebar-button clearfix"><img src="/assets/images/icons/icon-53.png" alt="" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      {/* main-header end */}
+      {/* Mobile Menu  */}
+      <div className="mobile-menu">
+        <div className="menu-backdrop" />
+        <div className="close-btn"><i className="fas fa-times" /></div>
+        <nav className="menu-box">
+          <div className="nav-logo"><a href="/"><img src="/assets/images/logo.png" alt="" title="" /></a></div>
+          <div className="menu-outer">{/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header*/}</div>
+          <div className="contact-info">
+            <h4>Contact Info</h4>
+            <ul>
+              <li>Chicago 12, Melborne City, USA</li>
+              <li><a href="tel:+8801682648101">+88 01682648101</a></li>
+              <li><a href="mailto:info@example.com">info@example.com</a></li>
+            </ul>
+          </div>
+          <div className="social-links">
+            <ul className="clearfix">
+              <li><a href="/"><span className="fab fa-twitter" /></a></li>
+              <li><a href="/"><span className="fab fa-facebook-square" /></a></li>
+              <li><a href="/"><span className="fab fa-pinterest-p" /></a></li>
+              <li><a href="/"><span className="fab fa-instagram" /></a></li>
+              <li><a href="/"><span className="fab fa-youtube" /></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      {/* End Mobile Menu */}
+      {/* page-title */}
+      <section className="page-title p_relative">
+        <div className="bg-layer" style={{backgroundImage: 'url(/assets/images/background/page-title.jpg)'}} />
+        <div className="auto-container">
+          <div className="content-box">
+            <h1>About Us</h1>
+            <ul className="bread-crumb clearfix">
+              <li><a href="/">Home</a></li>
+              <li>About Us</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      {/* page-title end */}
+      {/* about-style-six */}
+      <section className="about-style-six pt_120 pb_130">
+        <div className="auto-container">
+          <div className="row clearfix">
+            <div className="col-lg-7 col-md-12 col-sm-12 content-column">
+              <div className="content_block_three">
+                <div className="content-box">
+                  <div className="sec-title mb_40">
+                    <span className="sub-title mb_11">comapny vision</span>
+                    <h2>About Us Our Company Mission &amp; Vision for Long Term</h2>
+                    <p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.</p>
+                    <h4>About the ubiquitous lorem ipsum passage. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts plan of roof. <a href="/contact">Contact us</a> for more information.</h4>
+                  </div>
+                  <div className="inner-box">
+                    <div className="row clearfix">
+                      <div className="col-lg-6 col-md-6 col-sm-12 single-column">
+                        <div className="single-item">
+                          <div className="icon-box"><img src="/assets/images/icons/icon-54.png" alt="" /></div>
+                          <h3>Solution for <br />Modular Kitchen</h3>
+                        </div>
+                      </div>
+                      <div className="col-lg-6 col-md-6 col-sm-12 single-column">
+                        <div className="single-item">
+                          <div className="icon-box"><img src="/assets/images/icons/icon-55.png" alt="" /></div>
+                          <h3>Solution for <br />Kitchen Renovation</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-5 col-md-12 col-sm-12 image-column">
+              <div className="image-box ml_35">
+                <figure className="image"><img src="/assets/images/resource/about-6.jpg" alt="" /></figure>
+                <div className="experience-box p_absolute r_0 b_0">
+                  <h2>30</h2>
+                  <h5>Years of experience in this field</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* about-style-six end */}
+      {/* chooseus-section */}
+      <section className="chooseus-section about-page">
+        <div className="auto-container">
+          <div className="inner-container">
+            <div className="row clearfix">
+              <div className="col-lg-4 col-md-6 col-sm-12 chooseus-block">
+                <div className="chooseus-block-one">
+                  <div className="inner-box">
+                    <div className="icon-box"><img src="/assets/images/icons/icon-31.png" alt="" /></div>
+                    <h4>Reasonable Prices</h4>
+                    <p>We produce furniture to fulfill needs of all people and offer it at affordable and fair prices</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-12 chooseus-block">
+                <div className="chooseus-block-one">
+                  <div className="inner-box">
+                    <div className="icon-box"><img src="/assets/images/icons/icon-32.png" alt="" /></div>
+                    <h4>Professional Team</h4>
+                    <p>we are porud of ouramicable, professional and always developing team</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-12 chooseus-block">
+                <div className="chooseus-block-one">
+                  <div className="inner-box">
+                    <div className="icon-box"><img src="/assets/images/icons/icon-33.png" alt="" /></div>
+                    <h4>Exclusive Design</h4>
+                    <p>Mixture of imagination, expeience and professionalism the secret of our design</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* chooseus-section end */}
+      {/* consulting-section */}
+      <section className="consulting-section bg-color-1 pt_130">
+        <div className="auto-container">
+          <div className="row align-items-center">
+            <div className="col-lg-6 col-md-12 col-sm-12 content-column">
+              <div className="content-box">
+                <h2>We can build your kitchen of your dream</h2>
+                <p>We plainly comprehend that you need not to lose, but rather to gain more cash over your time of work with us.</p>
+                <h3>You Dream It, We Design It.</h3>
+                <a href="/" className="theme-btn">schedule a consultation</a>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-12 col-sm-12 image-column">
+              <div className="image-box ml_30">
+                <figure className="image image-hov-two"><img src="/assets/images/resource/consultation-1.jpg" alt="" /></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* consulting-section end */}
+      {/* funfact-section */}
+      <section className="funfact-section pt_120 pb_120 bg-color-1">
+        <div className="auto-container">
+          <div className="row clearfix">
+            <div className="col-lg-3 col-md-6 col-sm-12 funfact-block">
+              <div className="funfact-block-one mr_60">
+                <div className="inner-box">
+                  <div className="count-outer">
+                    <span className="odometer" data-count={27}>00</span><span className="symble">+</span>
+                  </div>
+                  <p>Architecture</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12 funfact-block">
+              <div className="funfact-block-one mr_30">
+                <div className="inner-box">
+                  <div className="count-outer">
+                    <span className="odometer" data-count={78}>00</span><span className="symble">+</span>
+                  </div>
+                  <p>Interior Designs</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12 funfact-block">
+              <div className="funfact-block-one mr_30">
+                <div className="inner-box">
+                  <div className="count-outer">
+                    <span className="odometer" data-count={38}>00</span><span className="symble">+</span>
+                  </div>
+                  <p>Modular Kitchens</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12 funfact-block">
+              <div className="funfact-block-one">
+                <div className="inner-box">
+                  <div className="count-outer">
+                    <span className="odometer" data-count={98}>00</span><span className="symble">+</span>
+                  </div>
+                  <p>Project done</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* funfact-section end */}
+      {/* video-section */}
+      <section className="video-section">
+        <div className="bg-layer" style={{backgroundImage: 'url(/assets/images/background/video-bg.jpg)'}} />
+        <div className="outer-container">
+          <div className="row align-items-center">
+            <div className="col-lg-6 col-md-12 col-sm-12 content-column">
+              <div className="content_block_two">
+                <div className="content-box">
+                  <h2>Our core values allow us to stay on track and <span>innovate in design.</span></h2>
+                  <h3>Feel good experience from design to installation</h3>
+                  <p>We’re following all protocols to ensure your safety and vaccination drives are underway to ensure our employees.</p>
+                  <a href="/" className="theme-btn">checkout videos</a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-12 col-sm-12 video-column">
+              <div className="video_block_one">
+                <div className="video-content ml_75 mr_60">
+                  <div className="video-box" style={{backgroundImage: 'url(/assets/images/resource/video-1.jpg)'}}>
+                    <div className="video-btn">
+                      <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&t=28s" className="lightbox-image" data-caption=""><img src="/assets/images/icons/icon-19.png" alt="" /><span className="border-animation" /><span className="border-animation border-1" /><span className="border-animation border-2" /><span className="border-animation border-3" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* video-section end */}
+      {/* team-section */}
+      <section className="team-section about-page centred pt_110">
+        <div className="auto-container">
+          <div className="sec-title centred mb_60">
+            <span className="sub-title mb_19">Certified professionals</span>
+            <h2>Our Dedicated Team</h2>
+          </div>
+          <div className="row clearfix">
+            <div className="col-lg-3 col-md-6 col-sm-12 team-block">
+              <div className="team-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                <div className="inner-box">
+                  <div className="image-box">
+                    <figure className="image"><img src="/assets/images/team/team-1.jpg" alt="" /></figure>
+                    <ul className="social-links">
+                      <li><a href="/"><i className="fab fa-facebook-f" /></a></li>
+                      <li><a href="/"><i className="fab fa-twitter" /></a></li>
+                      <li><a href="/"><i className="fab fa-linkedin-in" /></a></li>
+                    </ul>
+                  </div>
+                  <div className="lower-content">
+                    <h3><a href="/">Alison Clutcher</a></h3>
+                    <span className="designation">Supervisor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12 team-block">
+              <div className="team-block-one wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div className="inner-box">
+                  <div className="image-box">
+                    <figure className="image"><img src="/assets/images/team/team-2.jpg" alt="" /></figure>
+                    <ul className="social-links">
+                      <li><a href="/"><i className="fab fa-facebook-f" /></a></li>
+                      <li><a href="/"><i className="fab fa-twitter" /></a></li>
+                      <li><a href="/"><i className="fab fa-linkedin-in" /></a></li>
+                    </ul>
+                  </div>
+                  <div className="lower-content">
+                    <h3><a href="/">Rober Joe</a></h3>
+                    <span className="designation">Installation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12 team-block">
+              <div className="team-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                <div className="inner-box">
+                  <div className="image-box">
+                    <figure className="image"><img src="/assets/images/team/team-3.jpg" alt="" /></figure>
+                    <ul className="social-links">
+                      <li><a href="/"><i className="fab fa-facebook-f" /></a></li>
+                      <li><a href="/"><i className="fab fa-twitter" /></a></li>
+                      <li><a href="/"><i className="fab fa-linkedin-in" /></a></li>
+                    </ul>
+                  </div>
+                  <div className="lower-content">
+                    <h3><a href="/">Ema Watson</a></h3>
+                    <span className="designation">Modelling</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12 team-block">
+              <div className="team-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                <div className="inner-box">
+                  <div className="image-box">
+                    <figure className="image"><img src="/assets/images/team/team-4.jpg" alt="" /></figure>
+                    <ul className="social-links">
+                      <li><a href="/"><i className="fab fa-facebook-f" /></a></li>
+                      <li><a href="/"><i className="fab fa-twitter" /></a></li>
+                      <li><a href="/"><i className="fab fa-linkedin-in" /></a></li>
+                    </ul>
+                  </div>
+                  <div className="lower-content">
+                    <h3><a href="/">Hilary Joi</a></h3>
+                    <span className="designation">Designer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* team-section end */}
+      <div className="slide-text-outer p_relative pb_80 pt_60">
+        <span className="text-box italic">Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish&nbsp;&nbsp;&nbsp;&nbsp;Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish&nbsp;&nbsp;&nbsp;&nbsp;Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish&nbsp;&nbsp;&nbsp;&nbsp;Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish&nbsp;&nbsp;&nbsp;&nbsp;Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish&nbsp;&nbsp;&nbsp;&nbsp;Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish&nbsp;&nbsp;&nbsp;&nbsp;Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish&nbsp;&nbsp;&nbsp;&nbsp;Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish&nbsp;&nbsp;&nbsp;&nbsp;Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish&nbsp;&nbsp;&nbsp;&nbsp;Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish&nbsp;&nbsp;&nbsp;&nbsp;Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish&nbsp;&nbsp;&nbsp;&nbsp;Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish&nbsp;&nbsp;&nbsp;&nbsp;Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish&nbsp;&nbsp;&nbsp;&nbsp;Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish&nbsp;&nbsp;&nbsp;&nbsp;Modular Kitchen&nbsp;&nbsp;&nbsp;&nbsp;Interior&nbsp;&nbsp;&nbsp;&nbsp;Cabinet Finish</span>
+      </div>
+      {/* main-footer */}
+      <footer className="main-footer">
+        <div className="auto-container">
+          <div className="row clearfix">
+            <div className="col-lg-6 col-md-12 col-sm-12 footer-column">
+              <div className="logo-widget footer-widget mt_5">
+                <figure className="footer-logo"><a href="/"><img src="/assets/images/logo.png" alt="" /></a></figure>
+                <h3>We made project specially for  Modular Kitchen &amp; Interior</h3>
+                <ul className="info-list">
+                  <li>
+                    <span>Call Us</span>
+                    <a href="tel:+180034567890">+1800 ( 345 ) 67890</a>
+                  </li>
+                  <li>
+                    <span>Send a message</span>
+                    <a href="mailto:info@Kitchnox.com">info@Kitchnox.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-12 col-sm-12 footer-column">
+              <div className="footer-widget ml_170">
+                <div className="row clearfix">
+                  <div className="col-lg-6 col-md-6 col-sm-12 links-column">
+                    <div className="links-widget">
+                      <div className="widget-title">
+                        <span>company</span>
+                      </div>
+                      <ul className="links-list clearfix">
+                        <li><a href="/about">Company</a></li>
+                        <li><a href="/service">Service</a></li>
+                        <li><a href="/project">Projects</a></li>
+                        <li><a href="/contact">Contacts</a></li>
+                        <li><a href="/blog">Blogs</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-6 col-sm-12 links-column">
+                    <div className="links-widget">
+                      <div className="widget-title">
+                        <span>Services</span>
+                      </div>
+                      <ul className="links-list clearfix">
+                        <li><a href="/">Kitchen Drawing</a></li>
+                        <li><a href="/">Kitchen Installation</a></li>
+                        <li><a href="/">Kitchen Modelling</a></li>
+                        <li><a href="/">Kitchen Renovation</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="copyright mt_40"><p>© Copyright  <a href="/">Kitchnox</a> 2024 . All right reserved.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      {/* main-footer end */}
+      {/*Scroll to top*/}
+      <div className="scroll-to-top">
+        <svg className="scroll-top-inner" viewBox="-1 -1 102 102">
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </div>
+    </div>
+    {/* jequery plugins */}
+    {/* main-js */}
+  </>
+);
+
+export default About;
