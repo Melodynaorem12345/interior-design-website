@@ -13,20 +13,21 @@ import Service from './pages/Service.jsx';
 import Team from './pages/Team.jsx';
 import Testimonial from './pages/Testimonial.jsx';
 
+const base = import.meta.env.BASE_URL;
 const scriptSources = [
-  '/assets/js/jquery.js',
-  '/assets/js/bootstrap.min.js',
-  '/assets/js/owl.js',
-  '/assets/js/wow.js',
-  '/assets/js/jquery.fancybox.js',
-  '/assets/js/appear.js',
-  '/assets/js/isotope.js',
-  '/assets/js/jquery.nice-select.min.js',
-  '/assets/js/nav-tool.js',
-  '/assets/js/scrolltop.min.js',
-  '/assets/js/odometer.js',
-  '/assets/js/script.js',
-];
+  'assets/js/jquery.js',
+  'assets/js/bootstrap.min.js',
+  'assets/js/owl.js',
+  'assets/js/wow.js',
+  'assets/js/jquery.fancybox.js',
+  'assets/js/appear.js',
+  'assets/js/isotope.js',
+  'assets/js/jquery.nice-select.min.js',
+  'assets/js/nav-tool.js',
+  'assets/js/scrolltop.min.js',
+  'assets/js/odometer.js',
+  'assets/js/script.js',
+].map((path) => new URL(path, base).href);
 
 const ScriptLoader = () => {
   useEffect(() => {
