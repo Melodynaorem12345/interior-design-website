@@ -21,6 +21,7 @@ const resolveBaseUrl = () => {
 };
 
 const base = resolveBaseUrl();
+const assetBase = `${window.location.origin}${base}`;
 const scriptSources = [
   'assets/js/jquery.js',
   'assets/js/bootstrap.min.js',
@@ -34,7 +35,7 @@ const scriptSources = [
   'assets/js/scrolltop.min.js',
   'assets/js/odometer.js',
   'assets/js/script.js',
-].map((path) => new URL(path, `${window.location.origin}${base}`).toString());
+].map((path) => new URL(path, assetBase).toString());
 
 const ScriptLoader = () => {
   useEffect(() => {
@@ -95,9 +96,30 @@ const ScrollToTop = () => {
   return null;
 };
 
+const AssetBaseUpdater = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const rewrite = (selector, attr) => {
+      document.querySelectorAll(selector).forEach((el) => {
+        const value = el.getAttribute(attr);
+        if (value && value.startsWith('/assets/')) {
+          el.setAttribute(attr, assetBase + value.slice(1));
+        }
+      });
+    };
+
+    rewrite('img[src^="/assets/"], script[src^="/assets/"], source[src^="/assets/"], video[src^="/assets/"], audio[src^="/assets/"]', 'src');
+    rewrite('link[href^="/assets/"], a[href^="/assets/"]', 'href');
+  }, [location.pathname]);
+
+  return null;
+};
+
 const App = () => (
   <>
     <ScriptLoader />
+    <AssetBaseUpdater />
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
