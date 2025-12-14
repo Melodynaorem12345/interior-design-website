@@ -13,7 +13,14 @@ import Service from './pages/Service.jsx';
 import Team from './pages/Team.jsx';
 import Testimonial from './pages/Testimonial.jsx';
 
-const base = import.meta.env.BASE_URL;
+const resolveBaseUrl = () => {
+  const rawBase = import.meta.env.BASE_URL || '/';
+  // Ensure the base starts and ends with a single slash for URL construction.
+  const normalized = rawBase.startsWith('/') ? rawBase : `/${rawBase}`;
+  return normalized.endsWith('/') ? normalized : `${normalized}/`;
+};
+
+const base = resolveBaseUrl();
 const scriptSources = [
   'assets/js/jquery.js',
   'assets/js/bootstrap.min.js',
@@ -27,7 +34,7 @@ const scriptSources = [
   'assets/js/scrolltop.min.js',
   'assets/js/odometer.js',
   'assets/js/script.js',
-].map((path) => new URL(path, base).href);
+].map((path) => new URL(path, `${window.location.origin}${base}`).toString());
 
 const ScriptLoader = () => {
   useEffect(() => {
